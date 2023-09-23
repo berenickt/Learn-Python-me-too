@@ -1,8 +1,10 @@
+# os : 운영체제에서 제공하는 기본 기능
 import os
 
 print(os.getcwd())  # 현재 작업 폴더 위치(경로)
 
 folder = "sample_dir"
+
 if os.path.exists(folder):  # 같은 이름의 폴더가 존재한다면
     print("이미 존재하는 폴더입니다.")
     os.rmdir(folder)  # 폴더 삭제
